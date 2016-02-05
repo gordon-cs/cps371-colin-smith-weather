@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+
+.center {
+    text-align: center; margin-top: auto;
+}.row-67 {
+    min-height: 67%;
+    max-height: 67%;
+}
+
+.row-33 {
+    min-height: 33%;
+    max-height: 33%;
+}

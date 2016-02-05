@@ -1,0 +1,9 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/Colin/Desktop/myApp/www/lib/ionic/js/ionic.js",
+        "C:/Users/Colin/Desktop/myApp/www/js/controllers.js",
+        "C:/Users/Colin/Desktop/myApp/gulpfile.js",
+        "C:/Users/Colin/Desktop/myApp/www/lib/ionic/js/ionic.min.js",
+        "C:/Users/Colin/Desktop/myApp/www/lib/ionic/js/ionic.bundle.min.js"
+    ]
+}
