@@ -90,7 +90,7 @@ weatherApp.service('weatherData', ['$q', '$resource', '$http',
 		return weatherStore.current.daily.icon;
 	};
 			
-	//Changes icon name into an icon picture
+	//Returns the icon of a selected day
 	this.icon = function(iconNum) {
 		if (!iconNum){
 			iconNum = 0;
@@ -124,21 +124,17 @@ weatherApp.service('weatherData', ['$q', '$resource', '$http',
 		return $filter('date')(todayTime * 1000, 'EEEE');
 	}
 	  	
-			
-//	this.tempToMidnightLow = function() {
-//	    var low = this.tempNow();
-//	    var start = this.findHourNow();
-//	    var end = this.findHourMidnight();
-//	    if (start >= 0 && end >= 0) {
-//		for (var i = start; i <= end; i++) {
-//		    low = Math.min(low,
-//				   weatherStore.current.hourly.data[i].temperature);
+////Gets today's day of the week
+//	this.icon = function(dayNum) {
+//		if (!dayNum) {
+//			dayNum = 0;
 //		}
-//	    }
-//
-//	    return this.roundTemp(low);
-//	};
-
+//		var icon = weatherStore.current.daily.data[dayNum].icon + ".png";
+//		return icon
+//	}
+	
+	
+	
 	// Return the index into hourly of the hour, if any, which
 	// contains time (unix time in sec).  Return -1 if not found.
 	// Assume the time in hourly.data is the start of the hour.

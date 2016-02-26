@@ -17,7 +17,7 @@
 				$scope.summary = weatherData.summary();
 				$scope.humidity = weatherData.humidity();
 				$scope.wind = weatherData.windSpeed();
-				$scope.icon = weatherData.icon();
+				$scope.currentIcon = weatherData.icon();
 				
 //Sets today day of the week name
 //at the beginning of the weekly forecast.
@@ -57,6 +57,31 @@
 					
 	//Returns current day of the week
 			$scope.currentDay = weatherData.currentDay();
+				
+				
+	//Returns the icons as png and makes them usable in my app.			
+	//Inspired from Matthew Felgate's code
+   // $scope.currentPicture = "img/" + $scope.icon + ".png";
+//    $scope.hour1pic = "img/" + $scope.weather.hourly.data[1].icon + ".png";
+//    $scope.hour2pic = "img/" + $scope.weather.hourly.data[2].icon + ".png";
+//    $scope.hour3pic = "img/" + $scope.weather.hourly.data[3].icon + ".png";
+//    $scope.hour4pic = "img/" + $scope.weather.hourly.data[4].icon + ".png";
+//    $scope.hour5pic = "img/" + $scope.weather.hourly.data[5].icon + ".png";
+//    $scope.hour6pic = "img/" + $scope.weather.hourly.data[6].icon + ".png";
+//    $scope.hour7pic = "img/" + $scope.weather.hourly.data[7].icon + ".png";
+//    $scope.hour8pic = "img/" + $scope.weather.hourly.data[8].icon + ".png";
+//    $scope.hour9pic = "img/" + $scope.weather.hourly.data[9].icon + ".png";
+//    $scope.hour10pic = "img/" + $scope.weather.hourly.data[10].icon + ".png";
+//    $scope.hour11pic = "img/" + $scope.weather.hourly.data[11].icon + ".png";
+//    $scope.hour12pic = "img/" + $scope.weather.hourly.data[12].icon + ".png";
+//
+//    $scope.day1Icon = weatherData.icon(1);
+//    $scope.day2Icon = weatherData.icon(2);
+//    $scope.day3Icon = weatherData.icon(3);
+//    $scope.day4Icon = weatherData.icon(4);
+//    $scope.day5Icon = weatherData.icon(5);
+//    $scope.day6Icon = weatherData.icon(6);
+//    $scope.day7Icon = weatherData.icon(7);
 				
      	});
   };

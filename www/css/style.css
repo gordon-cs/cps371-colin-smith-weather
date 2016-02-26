@@ -1,8 +1,27 @@
 /* Empty. Add your own CSS if you like */
 
+ion-content{
+/*
+	background: url("night.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+*/
+/*	background-color: aqua*/
+}
+
 .center {
     text-align: center; margin-top: auto;
-}.row-67 {
+}
+	
+/*
+.col {
+		background-color: #707070 !important;
+		opacity: .8;
+	}
+*/
+	
+	
+.row-67 {
     min-height: 67%;
     max-height: 67%;
 }
