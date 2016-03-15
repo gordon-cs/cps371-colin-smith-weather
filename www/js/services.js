@@ -1,9 +1,5 @@
 'use strict';
 
-/* Notes on forecast.io's API:
- *  - daily.data[0] is today
- */
-
 weatherApp.constant('FORECASTIO_KEY', '74f28a5eb37ac7f45ca31633870c57b0');
 
 /* weatherStore holds data for weatherData service.
@@ -90,12 +86,14 @@ weatherApp.service('weatherData', ['$q', '$resource', '$http',
 		return weatherStore.current.daily.icon;
 	};
 			
-	//Returns the icon of a selected day
+	//Returns the icon of a selected day.
 	this.icon = function(iconNum) {
 		if (!iconNum){
 			iconNum = 0;
 		}
-		return weatherStore.current.daily.data[iconNum].icon;
+		var icon = weatherStore.current.daily.data[iconNum].icon
+		icon = "img/" + icon + ".png"
+		return icon;
 	};
 	
 	// Return Saturday's high temperature
@@ -122,18 +120,7 @@ weatherApp.service('weatherData', ['$q', '$resource', '$http',
 		}
 		var todayTime = weatherStore.current.daily.data[dayNum].time;
 		return $filter('date')(todayTime * 1000, 'EEEE');
-	}
-	  	
-////Gets today's day of the week
-//	this.icon = function(dayNum) {
-//		if (!dayNum) {
-//			dayNum = 0;
-//		}
-//		var icon = weatherStore.current.daily.data[dayNum].icon + ".png";
-//		return icon
-//	}
-	
-	
+	}	
 	
 	// Return the index into hourly of the hour, if any, which
 	// contains time (unix time in sec).  Return -1 if not found.

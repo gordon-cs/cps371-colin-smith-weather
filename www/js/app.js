@@ -6,4 +6,3 @@
 //   * module name
 //   * other modules it requires (dependencies)
 var weatherApp = angular.module('weather', ['ionic', 'ngResource']);
-

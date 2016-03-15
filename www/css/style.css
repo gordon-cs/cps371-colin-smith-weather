@@ -1,24 +1,11 @@
-/* Empty. Add your own CSS if you like */
-
 ion-content{
-/*
-	background: url("night.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-*/
-/*	background-color: aqua*/
+	
+	background-color: lightblue
 }
 
 .center {
     text-align: center; margin-top: auto;
 }
-	
-/*
-.col {
-		background-color: #707070 !important;
-		opacity: .8;
-	}
-*/
 	
 	
 .row-67 {
@@ -30,3 +17,4 @@ ion-content{
     min-height: 33%;
     max-height: 33%;
 }
+

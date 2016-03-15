@@ -22,62 +22,97 @@
     <script src="js/controllers.js"></script>
     
   </head>
-  <body ng-app="weather">
-				
-		
+  <body ng-app="weather">	
 
     <ion-header-bar class="bar-dark">
       <h1 class="title">Wenham, MA</h1>
     </ion-header-bar>
-
-    <!-- <ion-nav-bar class="bar-positive">
-    </ion-nav-bar> -->
-    
     <ion-pane ng-controller="MainCtrl">
-	<ion-content scroll="false">
+	<ion-content scroll="true">
 	  <div class="row row-67 center">
 	    <div class="col">
-	      <script>console.log("today")</script>
-	      Current Temperature: {{tempCurrent}} °F<br>
-				Today's High: {{tempDayHigh}} °F<br>
-				Today's Low: {{tempDayLow}} °F<br>
-				Current Forecast: {{summary}}<br>
-				{{humidity*100}}% humidity<br>
-				Wind speed: {{wind}} mph<br>
-				Day of the week: {{currentDay}}<br>
-				<img ng-src= "{{icon}}" height="100" width="100">
+	      <script>console.log("today")</script><br>
+				<font size="8">{{currentDay}}</font><br>
+				<br>
+				<font size="4">Forecast: {{summary}}</font><br><br><br>
+				<font size="8">{{tempCurrent}} °F</font>
+	    </div>
+			<div class="col">
+				<br><br><br>
+				<img ng-src= "{{currentIcon}}" height="200" width="200">
+			</div>
+	    <div class="col">
+	      <script>console.log("today")</script><br>
+				<font size="5">{{currentDay}}'s Information:</font><br><br><br>
+				<font size="4">High: {{tempDayHigh}} °F</font><br><br>
+				<font size="4">Low: {{tempDayLow}} °F</font><br><br>
+				<font size="4">{{humidity*100}}% humidity</font><br><br>
+				<font size="4">Wind speed: {{wind}} mph</font><br>
 	    </div>
 	  </div>
-	  <div class="row row-33">
-			<div class="col center">
-				High:<br>
-				Low:
+		  <div class="row row-33">
 			</div>
-	    <div class="col center">{{day1Icon}}<br>
-				{{currentDay1}}<br>
-	      {{tempDay1High}} °F<br>
-				{{tempDay1Low}} °F</div>
-			<div class="col center">{{currentDay2}}<br>
-	      {{tempDay2High}} °F<br>
-				{{tempDay2Low}} °F</div>
-			<div class="col center">{{currentDay3}}<br>
-	      {{tempDay3High}} °F<br>
-				{{tempDay3Low}} °F</div>
-			<div class="col center">{{currentDay4}}<br>
-	      {{tempDay4High}} °F<br>
-				{{tempDay4Low}} °F</div>
-			<div class="col center">{{currentDay5}}<br>
-	      {{tempDay5High}} °F<br>
-				{{tempDay5Low}} °F</div>
-			<div class="col center">{{currentDay6}}<br>
-	      {{tempDay6High}} °F<br>
-				{{tempDay6Low}} °F</div>
-			<div class="col center">{{currentDay7}}<br>
-	      {{tempDay7High}} °F<br>
-				{{tempDay7Low}} °F</div>
+	    <div class="col center">
+				<font size="4">{{currentDay1}}</font><br>
+				<img ng-src= "{{day1Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay1High}} °F<br>
+				Low: {{tempDay1Low}} °F
+				<br>
+				<br></div>
+				<div class="col center">
+					<font size="4">{{currentDay2}}</font><br>
+				<img ng-src= "{{day2Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay2High}} °F<br>
+				Low: {{tempDay2Low}} °F
+				<br>
+				<br></div>
+				<div class="col center">
+					<font size="4">{{currentDay3}}</font><br>
+				<img ng-src= "{{day3Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay3High}} °F<br>
+				Low: {{tempDay3Low}} °F
+				<br>
+				<br></div>
+				<div class="col center">
+					<font size="4">{{currentDay4}}</font><br>
+				<img ng-src= "{{day4Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay4High}} °F<br>
+				Low: {{tempDay4Low}} °F
+				<br>
+				<br></div>
+				<div class="col center">
+					<font size="4">{{currentDay5}}</font><br>
+				<img ng-src= "{{day5Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay5High}} °F<br>
+				Low: {{tempDay5Low}} °F
+				<br>
+				<br></div>
+				<div class="col center">
+					<font size="4">{{currentDay6}}</font><br>
+				<img ng-src= "{{day6Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay6High}} °F<br>
+				Low: {{tempDay6Low}} °F
+				<br>
+				<br></div>
+				<div class="col center">
+					<font size="4">{{currentDay7}}</font><br>
+				<img ng-src= "{{day7Icon}}" height="100" width="100"><br>
+				Daily temperature<br>
+	      High: {{tempDay7High}} °F<br>
+				Low: {{tempDay7Low}} °F
+				<br>
+				<br></div>
 	  </div>
+		
 	</ion-content>
       </ion-pane>
 
   </body>
 </html>
+
